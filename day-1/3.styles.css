@@ -1,0 +1,53 @@
+p {
+  font-family: courier;
+  font-size: 160%;
+}
+
+/* multiple selectors */
+p,
+li {
+  color: green;
+}
+
+/* select by id */
+#my-name {
+  color: yellow;
+}
+
+/* select by class */
+.special {
+  color: orange;
+  font-weight: bold;
+}
+
+/* descendant combinator - <b> that's nested in <li> */
+li b {
+  color: rebeccapurple;
+}
+
+/* next-sibling combinator - <p> that comes directly after <h1> */
+h6 + p {
+  font-size: 200%;
+}
+
+/* style based on state */
+a:link {
+  color: pink;
+}
+
+a:visited {
+  color: brown;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* transform */
+.box {
+  margin: 30px; /* highlight */
+  width: 100px;
+  height: 100px;
+  background-color: rebeccapurple;
+  transform: rotate(0.8turn);
+}
