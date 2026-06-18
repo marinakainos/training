@@ -152,6 +152,8 @@ function getAge(name) {
   return ages[name];
 }
 
+Object.entries(ages);
+
 hasPerson("hasOwnProperty"); // true
 getAge("toString"); // [Function: toString]
 
