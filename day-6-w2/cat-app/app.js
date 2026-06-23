@@ -6,6 +6,8 @@ const app = express();
 
 app.set("view engine", "ejs");
 
+app.use(express.urlencoded());
+
 app.use('/', mainRouter);
 
 app.listen(3000, () => {

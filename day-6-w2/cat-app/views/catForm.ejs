@@ -1,9 +1,11 @@
-<!DOCTYPE html>
-<html>
-    <head></head>
+<%- include("layoutTop") %>
 
-    <body>
-        <p>Here's a list of my cats: <%= catsList %></p>
+        <p>Here's a list of my cats: <%= cats %></p>
+        <% cats.forEach((c) => { %>
+            <p><%= c.name %></p>
+        <%}) %>
+        
+        
         <br>
 
         <form action="/submit" method="POST">
@@ -16,5 +18,4 @@
             <input type="submit" value="Submit">
         </form> 
 
-    </body>
-</html>
+<%- include("layoutBottom") %>

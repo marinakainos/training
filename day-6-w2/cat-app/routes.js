@@ -1,4 +1,5 @@
-const express = require('express')
+const express = require('express');
+const catsService = require('./catsService');
 
 const router = express.Router();
 
@@ -14,23 +15,19 @@ let cats = [
 ]
 
 router.get('/cats', (req, res) => {
-    let catsList = cats.map(c => c.name).join(", ")
-
     res.render("main", {
-        catsList
+        catsList: catsService.getCatsList(cats)
     })
 });
 
 router.get('/cats/add', (req, res) => {
-    let catsList = cats.map(c => c.name).join(", ")
-    res.render('catForm', { catsList })
+    res.render('catForm', { cats })
 });
 
 router.post('/submit', (req, res) => {
-    let catsList = cats.map(c => c.name).join(", ");
-    console.log(req.body);
-    console.log('/submit ran');
-    res.send(catsList);
+    let newCat = req.body;
+    cats.push(newCat);
+    res.send(catsService.getCatsList(cats));
 })
 
 router.get('/cats/:name', (req, res) => {
