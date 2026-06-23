@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+
+    <body>
+        <p>Here's a list of my cats: <%= catsList %></p>
+        <br>
+
+        <form action="/submit" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" name="name" ><br>
+            
+            <label for="breed">Breed:</label><br>
+            <input type="text" name="breed"><br><br>
+            
+            <input type="submit" value="Submit">
+        </form> 
+
+    </body>
+</html>
