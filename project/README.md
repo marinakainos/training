@@ -109,11 +109,3 @@ I want to review my booking.
   + Total tickets  
   + Confirmation code 
 
- 
-## Stretch goals
-- Add prices
-- Filter by:
-  + Date
-  + Genre
-  + Rating
- 
