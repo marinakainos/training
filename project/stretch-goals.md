@@ -4,9 +4,11 @@ Build a **Cinema Booking Web Application**.
 
 ## Stretch goals
 - Add a "filter" button on the all movies page. Filter by options:
-  + Date of the earliest showing available for each movie
+  + Sort all movies by date of the earliest showing available for each movie
     + if multiple movies have the same showing date, sort alphabetically next
-  + Rating - in the following order: U, PG, 12/12A, 15, 18
+  + Rating
+    + add an extra option to pick one of the following: U, PG, 12/12A, 15, 18
+    + only display movies with the selected rating
   + Genre 
     + add an extra option to pick a genre
     + only display movies with the selected genre
