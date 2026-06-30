@@ -4,9 +4,12 @@ Build a **Cinema Booking Web Application**.
 
 ## Stretch goals
 - Add a "filter" button on the all movies page. Filter by options:
-  + Date (Ascending)
-  + Genre
-  + Rating
+  + Date of the earliest showing available for each movie
+    + if multiple movies have the same showing date, sort alphabetically next
+  + Rating - in the following order: U, PG, 12/12A, 15, 18
+  + Genre 
+    + add an extra option to pick a genre
+    + only display movies with the selected genre
 
 - Create a prices.json file in the following format:
 ``` js
